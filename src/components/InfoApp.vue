@@ -1,7 +1,7 @@
 <template>
     <main class="info">
       <h2>You can count on us</h2>
-      <div class="info-col">
+      <!-- <div class="info-col">
         <div class="col1 col">
           <div>
             <img src="../assets/icons8.png" />
@@ -29,7 +29,7 @@
             <p>All products are adequately priced to ensure you get value for your money at all times.</p>
           </div>
         </div>
-      </div>
+      </div> -->
     </main>
   </template>
   
