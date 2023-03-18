@@ -1,10 +1,6 @@
 <template>
     <div class="cart-col">
-      <div class="cart-image">
-        <div class="share">
-          <h4>Share this Product on</h4>
-        </div>
-        
+      <div class="cart-image">     
         <img src="../assets/AltCart.jpg" />
       </div>
       <div class="cart-details">
@@ -30,29 +26,10 @@
       </div>
     </div>
     <InfoApp />
-    <!-- <div>
-      <h2>Counter: {{ count }}</h2>
-      <div class="btn-wrapper">
-        <button class="btn decrement" @click="decrement">
-          -
-        </button>
-        <button class="btn increment" @click="increment">
-          +
-        </button>
-      </div>
-      <div class="input-wrapper">
-        <input class="input-field" type="number" v-model="value" />
-        <input class='submit' type='submit' @click='setValue(value)' value='Set Value'>
-      </div>
-      <button class="btn reset" @click="reset">
-        Reset
-      </button>
-    </div> -->
   </template>
   
   <script>
   import useCounter from '@/composable/counter'
-// import InfoApp from './InfoApp.vue'
   import InfoApp from './InfoApp.vue'
   
   export default {
@@ -75,7 +52,6 @@
   .cart-col{
     width: 100%;
     display: flex;
-    /* justify-content: space-evenly; */
     padding: 3rem 3rem;
   }
   .cart-details{
@@ -83,7 +59,6 @@
     margin-left: 4rem;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
   }
   h3{
     font-size: 2rem;
@@ -126,7 +101,7 @@
     }
     .cart-image{
       width: 90%;
-      margin: 2rem auto;
+      margin: 0rem auto;
 
     }
     img{
@@ -135,6 +110,31 @@
     .cart-details{
       width: 90%;
       margin: 0rem auto;
+    }
+    .cart-details h3{
+      font-size: 1rem;
+      padding-top: 10px;
+    }
+    button{
+      padding: 0;
+      font-size: 10px;
+    }
+    span{
+      border: 1px solid gray;
+      padding: 0.3rem 0.7rem;
+      text-align: center;
+    }
+    .cart-input{
+      margin-top: 1rem;
+      width: 50px;
+    }
+    .input-field{
+      max-width: 100px;
+    }
+    .proceed{
+      max-width: 120px;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
     }
   }
 </style>

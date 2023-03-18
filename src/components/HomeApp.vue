@@ -1,15 +1,15 @@
 <template>
-    <main class='not-found'>
-      <h1 class='heading-main'>Counter App</h1>
-      <p class='home__msg'>Counter App with VueJS that performs Increment, decrement, Reset and set Value functions. 
-      </p>
-       
-        <div> 
-          <button type='button' class='btn'><router-link to="/counter">Counter</router-link> </button>
-          <button type='button' class='btn'><a href='https://www.github.com/accoladesio'>GitHub</a> </button>
+    <main >
+      <div class="home_header">
+        <h1>Alt__ <br/> School</h1>
+      </div>
+      <div class='home'>
+        <p class='home__msg'>Proceed</p>
+        <div class="but"> 
+          <button type='button' class='btn btn1'><router-link to="/counter">Cart Counter</router-link> </button>
+          <button type='button' class='btn btn2'><a href='https://github.com/Timmydee/cart'>GitHub</a> </button>
         </div>
-
-        <span class='span'><p class='home__msg'> Created with ❤️ and 💡 by Ononobi 'Accolades' Praise</p></span>
+      </div>
     </main>
   </template>
   
@@ -20,11 +20,62 @@
   </script>
   
 <style>
-  .info{
-    background-color: antiquewhite;
-    padding: 4rem 3rem;
-  }
-  .info-col{
+  .home_header{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: aliceblue;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+  .home{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home p{
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  a{
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 1rem;
+    border: none;
+    font-size: 1rem;
+  }
+  .btn1{
+    background-color: green;
+  }
+  .btn2{
+    background-color: blue;
+  }
+
+  @media screen and (max-width:600px) {
+    .home_header{
+      font-size: 1rem;
+      height: 200px;
+    }
+    .but{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn{
+      margin: 0.5rem 0 0 0;
+    }
   }
 </style>
