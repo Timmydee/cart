@@ -1,4 +1,13 @@
-# cart
+# Alt School 3rd Semester Exam
+
+## Project Overview
+```
+A clone of the altschool mesh page showcasing a cart counter functionality using vue
+```
+### Project link
+```
+https://cart-counter.vercel.app/
+```
 
 ## Project setup
 ```
